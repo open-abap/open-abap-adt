@@ -1,0 +1,3 @@
+INTERFACE if_adt_rest_content_handler PUBLIC.
+
+ENDINTERFACE.
