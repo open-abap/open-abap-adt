@@ -22,7 +22,7 @@ INTERFACE if_adt_rest_request PUBLIC.
         values TYPE string,
     get_body_data
       IMPORTING
-        content_handler TYPE REF TO object
+        content_handler TYPE REF TO if_adt_rest_content_handler
       EXPORTING
         data            TYPE data
       RAISING
