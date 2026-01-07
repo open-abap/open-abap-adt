@@ -5,7 +5,7 @@ INTERFACE if_adt_rest_response PUBLIC.
 
   METHODS set_body_data
     IMPORTING
-      content_handler TYPE REF TO object
+      content_handler TYPE REF TO if_adt_rest_content_handler
       data            TYPE data.
 
   METHODS get_inner_rest_response
