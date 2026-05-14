@@ -85,20 +85,7 @@
     },
     "check_ddic": true,
     "check_include": true,
-    "check_subrc": {
-      "exclude": [],
-      "severity": "Error",
-      "openDataset": true,
-      "authorityCheck": true,
-      "selectSingle": true,
-      "selectTable": true,
-      "updateDatabase": true,
-      "insertDatabase": true,
-      "modifyDatabase": true,
-      "readTable": true,
-      "assign": true,
-      "find": true
-    },
+    "check_subrc": true,
     "check_syntax": true,
     "check_text_elements": true,
     "check_transformation_exists": true,
@@ -348,38 +335,7 @@
     },
     "nrob_consistency": true,
     "object_naming": false,
-    "obsolete_statement": {
-      "exclude": [],
-      "severity": "Error",
-      "refresh": true,
-      "compute": true,
-      "add": true,
-      "subtract": true,
-      "multiply": true,
-      "divide": true,
-      "move": true,
-      "requested": true,
-      "occurs": true,
-      "setExtended": true,
-      "withHeaderLine": true,
-      "fieldSymbolStructure": true,
-      "typePools": true,
-      "load": true,
-      "parameter": true,
-      "ranges": true,
-      "communication": true,
-      "pack": true,
-      "selectWithoutInto": true,
-      "freeMemory": true,
-      "exitFromSQL": true,
-      "sortByFS": true,
-      "callTransformation": true,
-      "regex": true,
-      "occurences": true,
-      "clientSpecified": true,
-      "formDefinition": true,
-      "formImplementation": true
-    },
+    "obsolete_statement": true,
     "omit_parameter_name": true,
     "omit_preceding_zeros": true,
     "omit_receiving": true,
@@ -394,28 +350,7 @@
     "prefer_corresponding": true,
     "prefer_inline": true,
     "prefer_is_not": true,
-    "prefer_pragmas": {
-      "exclude": [],
-      "severity": "Error",
-      "check": [
-        {
-          "pseudo": "#EC CI_SUBRC",
-          "pragma": "SUBRC_OK"
-        },
-        {
-          "pseudo": "#EC NEEDED",
-          "pragma": "NEEDED"
-        },
-        {
-          "pseudo": "#EC NOTEXT",
-          "pragma": "NO_TEXT"
-        },
-        {
-          "pseudo": "#EC NO_HANDLER",
-          "pragma": "NO_HANDLER"
-        }
-      ]
-    },
+    "prefer_pragmas": true,
     "prefer_raise_exception_new": true,
     "prefer_returning_to_exporting": false,
     "prefer_xsdbool": true,
