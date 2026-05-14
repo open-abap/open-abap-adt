@@ -3,6 +3,7 @@ CLASS cl_adt_disc_res_app_base DEFINITION PUBLIC.
   PUBLIC SECTION.
     INTERFACES if_adt_rest_rfc_application.
 
+  PROTECTED SECTION.
     METHODS:
       get_application_title
         RETURNING VALUE(result) TYPE string,

@@ -520,7 +520,7 @@
     "unsecure_fae": true,
     "unused_ddic": false,
     "unused_macros": true,
-    "unused_methods": true,
+    "unused_methods": false,
     "unused_types": false,
     "unused_variables": false,
     "use_bool_expression": true,
