@@ -1,0 +1,19 @@
+{
+  "name": "open-abap-adt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "test",
+  "scripts": {
+    "lint": "abaplint",
+    "unit": "rm -rf output && abap_transpile && echo RUNNING && node output/index.mjs",
+    "integration": "rm -rf output_test && abap_transpile ./abap_transpile_test.json && node output_test/index.mjs",
+    "test": "npm run lint && echo TODO"
+  },
+  "license": "",
+  "dependencies": {
+    "@abaplint/cli": "^2.119.20",
+    "@abaplint/runtime": "^2.13.23",
+    "@abaplint/database-sqlite": "^2.11.78",
+    "@abaplint/transpiler-cli": "^2.13.23"
+  }
+}
