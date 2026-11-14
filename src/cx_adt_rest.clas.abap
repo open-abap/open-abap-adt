@@ -38,7 +38,9 @@ ENDCLASS.
 CLASS cx_adt_rest IMPLEMENTATION.
 
   METHOD constructor.
-    RETURN.
+    super->constructor( previous = previous ).
+    if_t100_message~t100key = textid.
+    me->properties = properties.
   ENDMETHOD.
 
   METHOD get_longtext_from_exception.
